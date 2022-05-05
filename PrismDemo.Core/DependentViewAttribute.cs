@@ -5,13 +5,16 @@ using System.Text;
 namespace PrismDemo.Core
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]  //mozemo imati vise od 1 ribbon taba asociranog view-u
-    public class RibbonTabAttribute : Attribute
+    public class DependentViewAttribute : Attribute
     {
         public Type Type { get; private set; }
 
-        public RibbonTabAttribute(Type ribbonType)
+        public string TargetRegionName { get; private set; }
+
+        public DependentViewAttribute(Type viewType, string targetRegionName)
         {
-            Type = ribbonType;
+            Type = viewType;
+            TargetRegionName = targetRegionName;
         }
     }
 }

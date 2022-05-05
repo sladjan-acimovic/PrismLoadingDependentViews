@@ -107,7 +107,7 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Prism\RibbonRegionAdapter.cs" />
-    <Compile Include="Prism\RibbonRegionBehaviour.cs" />
+    <Compile Include="Prism\DependentViewRegionBehaviour.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

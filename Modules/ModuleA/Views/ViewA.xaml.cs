@@ -8,7 +8,7 @@ namespace ModuleA.Views
     /// Interaction logic for ViewA
     /// </summary>
     /// 
-    [RibbonTab(typeof(ViewATab))] //ViewA depends on RibbonTab ViewATab
+    [DependentView(typeof(ViewATab), "RibbonTabRegion")]
     public partial class ViewA : UserControl, ISupportDataContext
     {
         public ViewA()

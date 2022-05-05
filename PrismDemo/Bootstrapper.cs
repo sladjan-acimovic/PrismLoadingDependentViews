@@ -38,7 +38,7 @@ namespace PrismDemo
         protected override IRegionBehaviorFactory ConfigureDefaultRegionBehaviors()
         {
             var behavoiurs = base.ConfigureDefaultRegionBehaviors();
-            behavoiurs.AddIfMissing(RibbonRegionBehaviour.BehavoiourKey, typeof(RibbonRegionBehaviour));
+            behavoiurs.AddIfMissing(DependentViewRegionBehaviour.BehavoiourKey, typeof(DependentViewRegionBehaviour));
 
             return behavoiurs;
         }
