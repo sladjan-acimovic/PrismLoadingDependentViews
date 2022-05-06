@@ -111,7 +111,6 @@
     </Compile>
     <Compile Include="ViewModels\ViewAViewModel.cs" />
     <Compile Include="ViewModels\ViewBViewModel.cs" />
-    <Compile Include="ViewModels\ViewCViewModel.cs" />
     <Compile Include="Views\ViewA.xaml.cs">
       <DependentUpon>ViewA.xaml</DependentUpon>
     </Compile>
